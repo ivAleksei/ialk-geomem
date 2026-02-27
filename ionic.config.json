@@ -1,0 +1,7 @@
+{
+  "name": "baseorient",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

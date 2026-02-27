@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button class="back-button" (click)="nav.navigateBack('/map')">
+        <ion-icon name="arrow-back-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>{{i18n.lang.ADD_LOG}}</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <form #EntryForm="ngForm" novalidate>
+    <!-- <pre>{{EntryForm.value | json}}</pre> -->
+    <input type="hidden" name="_id" ngModel #_id="ngModel">
+
+    <p class="section-divisor"></p>
+    <div class="section">
+      <input type="hidden" name="lat" ngModel #lat="ngModel">
+      <input type="hidden" name="lng" ngModel #lng="ngModel">
+      <ion-item>
+        <ion-label position="stacked">{{i18n.lang.NAME}}</ion-label>
+        <ion-input placeholder="..." name="name" ngModel #name="ngModel"></ion-input>
+      </ion-item>
+    </div>
+    <p class="section-divisor"></p>
+    <div class="section">
+      <ion-item>
+        <ion-label position="stacked">{{i18n.lang.DATE}}</ion-label>
+        <ion-input type="date" placeholder="..." name="date" ngModel #date="ngModel"></ion-input>
+      </ion-item>
+    </div>
+    <p class="section-divisor"></p>
+    <div class="section">
+      <ion-item>
+        <ion-label position="stacked">{{i18n.lang.FOOD_TEXT}}</ion-label>
+        <ion-textarea [placeholder]="i18n.lang.FOOD_TEXT_PLACEHOLDER" name="foodText" ngModel #foodText="ngModel" rows="5"></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">{{i18n.lang.NOTES}}</ion-label>
+        <ion-textarea [placeholder]="i18n.lang.NOTES_PLACEHOLDER" name="notes" ngModel #notes="ngModel" rows="5"></ion-textarea>
+      </ion-item>
+    </div>
+  </form>
+  <ion-button [disabled]="loading" (click)="saveEntry()">{{i18n.lang.SAVE}}</ion-button>
+</ion-content>

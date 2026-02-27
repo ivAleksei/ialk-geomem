@@ -1,0 +1,55 @@
+.section-divisor {
+    padding: 16px;
+    // padding-left: 16px;
+    margin: 0;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.section {
+    ion-item {
+        --border-color: transparent;
+
+        ion-label {
+            font-size: .9em;
+        }
+
+        ion-input,
+        ion-select,
+        ion-textarea {
+            text-align: right;
+        }
+
+        input {
+            background: transparent;
+            border: none;
+            text-align: right;
+            width: 100%;
+        }
+
+        &.disabled {
+            pointer-events: none;
+        }
+    }
+}
+
+ion-button {
+    width: 80%;
+    margin: 16px auto;
+}
+
+@media (prefers-color-scheme: dark) {
+    .section-divisor {
+        background: var(--ion-color-light-tint);
+        color: var(--ion-color-light-contrast);
+    }
+
+    ion-item,
+    ion-input {
+        --background: var(--ion-color-light);
+        --color: var(--ion-color-light-contrast);
+    }
+}

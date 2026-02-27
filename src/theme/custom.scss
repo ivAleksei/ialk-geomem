@@ -1,0 +1,314 @@
+* {
+    outline: none;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: var(--ion-color-dark);
+}
+
+
+.hidden {
+    display: none !important;
+}
+
+.btn {
+    border-radius: 16px;
+    background: #fff;
+    color: var(--ion-color-primary);
+
+    &.btn-primary {
+        background: var(--ion-color-primary);
+        color: var(--ion-color-primary-contrast);
+    }
+}
+
+ion-header {
+    ion-toolbar {
+        --background: var(--ion-color-light);
+        --color: var(--ion-color-light-contrast)
+    }
+}
+
+ion-content,
+.ion-page {
+    --overflow: visible;
+    --color: var(--ion-color-light-contrast);
+
+    &::part(background) {
+        background: var(--ion-color-light);
+    }
+}
+
+.back-btn {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--ion-color-medium);
+    font-size: 18px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .back-btn {
+        background: transparent;
+        color: var(--ion-color-medium);
+    }
+}
+
+// .back-button {
+//     width: 44px;
+//     height: 40px;
+//     --background: transparent !important;
+//     background: transparent !important;
+//     --background-activated: transparent !important;
+//     --background-focused: transparent !important;
+//     --background-hover: transparent !important;
+//     --color: var(--ion-color-medium) !important;
+//     color: var(--ion-color-medium) !important;
+
+//     ion-icon {
+//         height: 32px;
+//         width: 32px;
+//     }
+// }
+
+swiper-container {
+    --swiper-pagination-color: #fff;
+    --swiper-pagination-bullet-inactive-color: #ccc;
+}
+
+// .inline {
+//     display: flex;
+//     justify-content: left;
+// }
+
+// .t-center {
+//     text-align: center;
+// }
+
+// .t-right {
+//     text-align: right;
+// }
+
+// .section-divisor {
+//     padding-left: 16px;
+// }
+
+// .mk {
+//     pointer-events: none;
+// }
+
+
+// ion-item {
+//     --background: var(--ion-color-dark-tint);
+//     --color: var(--ion-color-dark-contrast);
+
+//     input {
+//         outline: none;
+//         background: transparent;
+//         border: none;
+//         text-align: right;
+//     }
+
+//     ion-input {
+//         text-align: right;
+//     }
+
+//     &.no-border {
+//         --border-color: transparent !important;
+//     }
+// }
+
+// .section {
+//     margin-bottom: 16px;
+//     padding: 8px 16px;
+//     background: var(--ion-color-dark-tint);
+
+
+
+//     ion-item {
+//         --border-color: transparent;
+//         --padding-start: 0;
+//         --inner-padding-end: 8px;
+
+//         &.disabled {
+//             pointer-events: none;
+//         }
+//     }
+
+//     ul {
+//         margin: 0;
+//         padding: 0;
+//         list-style: none;
+
+//         li {
+//             margin: 0;
+//             padding: 0;
+//             cursor: pointer;
+
+//             .menu-item {
+//                 position: relative;
+//                 display: flex;
+//                 justify-content: flex-start;
+//                 width: 100%;
+//                 padding: 4px 0;
+
+//                 .icon-place {
+//                     ion-icon {
+//                         font-size: 2em;
+//                     }
+//                 }
+
+//                 p {
+//                     margin: 8px 0;
+//                     text-align: left;
+
+//                     &.only {
+//                         margin: 8px 0;
+//                     }
+//                 }
+
+//                 .arrow {
+//                     position: absolute;
+//                     top: 12px;
+//                     right: 0px;
+//                     font-size: 1em;
+//                 }
+
+//             }
+
+//             &:last-child .menu-item {
+//                 border: none;
+//             }
+
+//             &.disabled {
+//                 opacity: .4;
+//                 pointer-events: none;
+//             }
+//         }
+
+//     }
+// }
+// .card {
+//     margin: 16px;
+//     padding: 16px;
+//     border-radius: 8px;
+//     background: var(--ion-color-dark-tint);
+//     color: var(--ion-color-dark-contrast);
+
+//     .card-title {
+//         margin: 16px 0;
+//         font-weight: bold;
+//     }
+// }
+
+// .action-sheet-group,
+// .action-sheet-group.action-sheet-group-cancel {
+//     &.sc-ion-action-sheet-ios button {
+//         background: var(--ion-color-dark-tint);
+
+//         &:after {
+//             background: var(--ion-color-dark-tint);
+//         }
+
+//         color: var(--ion-color-dark-contrast)
+//     }
+// }
+
+// .alert-wrapper {
+
+//     &.sc-ion-alert-md,
+//     &.sc-ion-alert-ios {
+//         background: var(--ion-color-dark-tint);
+//         color: var(--ion-color-dark-contrast)
+//     }
+
+
+//     .alert-title,
+//     .alert-message,
+//     .alert-button {
+
+//         &.sc-ion-alert-ios,
+//         &.sc-ion-alert-md {
+//             background: var(--ion-color-dark-tint);
+//             color: var(--ion-color-dark-contrast)
+//         }
+//     }
+
+// }
+
+// .alert-danger {
+//     .alert-button {
+
+//         &.sc-ion-alert-ios,
+//         &.sc-ion-alert-md {
+//             color: var(--ion-color-danger)
+//         }
+//     }
+// }
+
+
+
+// .card-badge {
+//     width: calc(33% - 32px);
+//     margin: 16px auto;
+
+//     .img-place {
+//         width: 100%;
+//         height: 72px;
+//         background-position: center;
+//         background-size: contain;
+//         background-repeat: no-repeat;
+//     }
+
+//     p {
+//         text-align: center;
+//         font-size: 12px;
+//         font-weight: bold;
+//     }
+// }
+
+
+
+// .avatar-place {
+//     width: 56px;
+//     height: 56px;
+//     border-radius: 28px;
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+// }
+
+// .card-challenge {
+//     padding: 8px;
+//     border-radius: 8px;
+//     width: 100%;
+
+//     &:first-of-type {
+//         margin-left: 0;
+//     }
+
+//     .img-place {
+//         width: 72px;
+//         height: 72px;
+//         background-position: center;
+//         background-size: contain;
+//         background-repeat: no-repeat;
+//     }
+
+//     .info {
+//         text-align: left;
+//         width: 100%;
+//         padding: 0 16px;
+
+//         p {
+//             width: 100%;
+//             text-align: left;
+//             font-size: 12px;
+
+//             &.title {
+//                 font-weight: bold;
+//             }
+//         }
+//     }
+
+// }

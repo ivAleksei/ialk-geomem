@@ -1,0 +1,122 @@
+ion-content {
+
+    --padding-top: 32px;
+    --padding-bottom: 32px;
+    --padding-start: 32px;
+    --padding-end: 32px;
+
+    .form-layout {
+        margin: 0 auto;
+    }
+}
+
+.intro {
+    padding-top: 15vh;
+
+    h4 {
+        font-size: 42px;
+    }
+}
+
+.form-group {
+    width: 100%;
+    background: #fff;
+    // border: 1px solid var(--ion-color-medium);
+    border-radius: 8px;
+    margin-bottom: 16px;
+
+    color: var(--ion-color-medium);
+    position: relative;
+
+    i {
+        font-size: 24px;
+
+        &.start {
+            position: absolute;
+            top: 14px;
+            left: 8px;
+        }
+
+        &.end {
+            position: absolute;
+            top: 14px;
+            right: 8px;
+        }
+    }
+
+    input {
+        border: 0px solid;
+        border-radius: 8px;
+        padding: 16px 38px;
+        font-weight: 300;
+        width: 100%;
+    }
+}
+
+.recover-lnk {
+    color: var(--ion-color-dark);
+    float: right;
+}
+
+.btn-login {
+    margin-top: 16px;
+    width: 100%;
+    height: 48px;
+}
+
+.create-lnk {
+    margin-top: 32px;
+    text-align: center;
+    color: var(--ion-color-medium);
+    font-weight: 500;
+}
+
+
+.divisor {
+    hr {
+        width: 90%;
+        margin: 0 auto;
+        border-bottom: 1px solid #ccc;
+    }
+
+    p {
+        background: var(--ion-color-light);
+        padding: 0 16px;
+        margin: 0 auto;
+        width: fit-content;
+        margin-top: -12px;
+        text-align: center;
+    }
+}
+
+.social-login {
+    margin-top: 32px;
+
+    button {
+        font-weight: 500;
+        width: calc(50% - 16px);
+        margin: 0 8px;
+        padding: 8px 16px;
+
+        i {
+            font-size: 16px;
+
+        }
+
+        &.google {
+            background: #E33629;
+            color: #fff;
+        }
+
+        &.facebook {
+            background: #3D47FA;
+            color: #fff;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .form-layout {
+        max-width: 600px;
+    }
+}

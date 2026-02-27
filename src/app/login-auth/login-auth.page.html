@@ -1,0 +1,37 @@
+<ion-content [fullscreen]="true">
+  <button class="btn back-btn" routerLink="/login-pre"><i class="mdi mdi-arrow-left"></i></button>
+  <div class="form-layout">
+    <div class="intro">
+      <h4>{{i18n.lang.LOGIN_APP}}</h4>
+    </div>
+    <form #LoginForm="ngForm" novalidate>
+      <div class="form-group">
+        <i class="start mdi mdi-email-outline"></i>
+        <input [placeholder]="i18n.lang.EMAIL_PLACEHOLDER" name="username" ngModel #username="ngModel" required
+          (keyup)="chkSubmit($event)" />
+      </div>
+      <div class="form-group">
+        <i class="start mdi mdi-lock-outline"></i>
+        <input [attr.type]="show_password?'text':'password'" [placeholder]="i18n.lang.PASSWORD_PLACEHOLDER"
+          name="password" ngModel #password="ngModel" required (keyup)="chkSubmit($event)" />
+        <i class="end mdi mdi-eye-{{show_password? '': 'off-'}}outline" (click)="show_password= !show_password"></i>
+      </div>
+    </form>
+    <a routerLink="/login-recover" class="recover-lnk">{{i18n.lang.FORGET_PASSWORD}}</a>
+    <ion-button color="primary" class="btn-login" [disabled]="production && (loading || !LoginForm.valid)"
+      (click)="login()">{{i18n.lang.LOGIN}}</ion-button>
+
+    <p class="create-lnk"> {{i18n.lang.CREATE_NEW_ACCOUNT}} <a routerLink="/login-reclaim">{{i18n.lang.SIGNUP}}</a></p>
+<!-- 
+    <div class="divisor">
+      <hr>
+      <p>{{i18n.lang.OR}}</p>
+    </div>
+
+    <div class="social-login">
+      <button class="btn google"><i class="mdi mdi-google"></i> {{i18n.lang.GOOGLE_LOGIN}}</button>
+      <button class="btn facebook"><i class="mdi mdi-facebook"></i> {{i18n.lang.FACEBOOK_LOGIN}}</button>
+    </div> -->
+  </div>
+
+</ion-content>

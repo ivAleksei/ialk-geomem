@@ -1,0 +1,756 @@
+{
+    "geocoded_waypoints": [
+        {
+            "geocoder_status": "OK",
+            "place_id": "ChIJaexFZsJVsgcRscRSjPl2bHU",
+            "types": [
+                "premise"
+            ]
+        },
+        {
+            "geocoder_status": "OK",
+            "place_id": "ChIJD7s8u8JVsgcRel65OqD3O6s",
+            "types": [
+                "street_address"
+            ]
+        },
+        {
+            "geocoder_status": "OK",
+            "place_id": "ChIJs6wa_sJVsgcR9ebWHYEu_PM",
+            "types": [
+                "premise"
+            ]
+        },
+        {
+            "geocoder_status": "OK",
+            "place_id": "ChIJw59yrpNVsgcRRB5UPcgV1YY",
+            "types": [
+                "bakery",
+                "convenience_store",
+                "establishment",
+                "food",
+                "point_of_interest",
+                "store"
+            ]
+        },
+        {
+            "geocoder_status": "OK",
+            "place_id": "ChIJcw4F88JVsgcRqQmmO0xF9wM",
+            "types": [
+                "premise"
+            ]
+        },
+        {
+            "geocoder_status": "OK",
+            "place_id": "ChIJoTMMUsJVsgcRk3FtnME4Gss",
+            "types": [
+                "premise"
+            ]
+        },
+        {
+            "geocoder_status": "OK",
+            "place_id": "ChIJaexFZsJVsgcRscRSjPl2bHU",
+            "types": [
+                "premise"
+            ]
+        }
+    ],
+    "routes": [
+        {
+            "bounds": {
+                "northeast": {
+                    "lat": -5.8577682,
+                    "lng": -35.2334087
+                },
+                "southwest": {
+                    "lat": -5.8636083,
+                    "lng": -35.2395609
+                }
+            },
+            "copyrights": "Map data ©2024",
+            "legs": [
+                {
+                    "distance": {
+                        "text": "1.6 km",
+                        "value": 1582
+                    },
+                    "duration": {
+                        "text": "22 mins",
+                        "value": 1310
+                    },
+                    "end_address": "Rua dos Pintassilgos, 137 - Pitimbú, Natal - RN, 59150-258, Brazil",
+                    "end_location": {
+                        "lat": -5.8636083,
+                        "lng": -35.237247
+                    },
+                    "start_address": "R. Serra das Cruzes, 8009 - Pitimbú, Natal - RN, 59068-060, Brazil",
+                    "start_location": {
+                        "lat": -5.8623935,
+                        "lng": -35.2383802
+                    },
+                    "steps": [
+                        {
+                            "distance": {
+                                "text": "0.1 km",
+                                "value": 109
+                            },
+                            "duration": {
+                                "text": "2 mins",
+                                "value": 94
+                            },
+                            "end_location": {
+                                "lat": -5.8616961,
+                                "lng": -35.2376892
+                            },
+                            "html_instructions": "Head <b>northeast</b> on <b>R. Serra das Cruzes</b>",
+                            "polyline": {
+                                "points": "|~wb@znavEIKa@_@}A}A"
+                            },
+                            "start_location": {
+                                "lat": -5.8623935,
+                                "lng": -35.2383802
+                            },
+                            "travel_mode": "WALKING"
+                        },
+                        {
+                            "distance": {
+                                "text": "51 m",
+                                "value": 51
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 47
+                            },
+                            "end_location": {
+                                "lat": -5.8619112,
+                                "lng": -35.2372878
+                            },
+                            "html_instructions": "Turn <b>right</b> onto <b>R. Serra dos Carajás</b>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "rzwb@pjavE^k@@MBKBI"
+                            },
+                            "start_location": {
+                                "lat": -5.8616961,
+                                "lng": -35.2376892
+                            },
+                            "travel_mode": "WALKING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.6 km",
+                                "value": 564
+                            },
+                            "duration": {
+                                "text": "8 mins",
+                                "value": 475
+                            },
+                            "end_location": {
+                                "lat": -5.8577682,
+                                "lng": -35.2343864
+                            },
+                            "html_instructions": "At the roundabout, take the <b>1st</b> exit onto <b>R. Rio Gramame</b>",
+                            "maneuver": "roundabout-right",
+                            "polyline": {
+                                "points": "|{wb@`havEAA?AAAKEEEMKCI}@q@i@c@uAeA_CiB_@YQKMIGCGESI_@OKC[OwDkBqBaA"
+                            },
+                            "start_location": {
+                                "lat": -5.8619112,
+                                "lng": -35.2372878
+                            },
+                            "travel_mode": "WALKING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.1 km",
+                                "value": 147
+                            },
+                            "duration": {
+                                "text": "2 mins",
+                                "value": 128
+                            },
+                            "end_location": {
+                                "lat": -5.8585878,
+                                "lng": -35.2334087
+                            },
+                            "html_instructions": "Turn <b>right</b> onto <b>Av. dos Xavantes</b>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "`bwb@|u`vEjA{BDKFKHQZSLCTE"
+                            },
+                            "start_location": {
+                                "lat": -5.8577682,
+                                "lng": -35.2343864
+                            },
+                            "travel_mode": "WALKING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.7 km",
+                                "value": 711
+                            },
+                            "duration": {
+                                "text": "9 mins",
+                                "value": 566
+                            },
+                            "end_location": {
+                                "lat": -5.8636083,
+                                "lng": -35.237247
+                            },
+                            "html_instructions": "At the roundabout, take the <b>1st</b> exit onto <b>Av. Pref. Omar O'Grady</b> heading to <b>Parnamirim</b>/<wbr/><b>BR-101</b><div style=\"font-size:0.9em\">Destination will be on the right</div>",
+                            "maneuver": "roundabout-right",
+                            "polyline": {
+                                "points": "dgwb@xo`vENDF?F?HADBFBH@PB\\FVJVNRL\\RZRrAz@zA`Aj@^rA~@LH`@XdA|@VRBBXVvBpBFFPPVXb@`@j@n@RTPT"
+                            },
+                            "start_location": {
+                                "lat": -5.8585878,
+                                "lng": -35.2334087
+                            },
+                            "travel_mode": "WALKING"
+                        }
+                    ],
+                    "traffic_speed_entry": [],
+                    "via_waypoint": []
+                },
+                {
+                    "distance": {
+                        "text": "1.7 km",
+                        "value": 1744
+                    },
+                    "duration": {
+                        "text": "25 mins",
+                        "value": 1478
+                    },
+                    "end_address": "Rua Serra das Araras, 8063 - Pitimbú, Natal - RN, 59068-050, Brazil",
+                    "end_location": {
+                        "lat": -5.8628008,
+                        "lng": -35.2394113
+                    },
+                    "start_address": "Rua dos Pintassilgos, 137 - Pitimbú, Natal - RN, 59150-258, Brazil",
+                    "start_location": {
+                        "lat": -5.8636083,
+                        "lng": -35.237247
+                    },
+                    "steps": [
+                        {
+                            "distance": {
+                                "text": "0.7 km",
+                                "value": 687
+                            },
+                            "duration": {
+                                "text": "10 mins",
+                                "value": 576
+                            },
+                            "end_location": {
+                                "lat": -5.8587985,
+                                "lng": -35.2334335
+                            },
+                            "html_instructions": "Head <b>northeast</b> on <b>Av. Pref. Omar O'Grady</b>",
+                            "polyline": {
+                                "points": "pfxb@xgavEQUSUk@o@c@a@WYQQGGwBqBYWCCWSeA}@a@YMIsA_Ak@_@{AaAsA{@[S]SSMWOWK]GQCIAGCEC"
+                            },
+                            "start_location": {
+                                "lat": -5.8636083,
+                                "lng": -35.237247
+                            },
+                            "travel_mode": "WALKING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.2 km",
+                                "value": 171
+                            },
+                            "duration": {
+                                "text": "3 mins",
+                                "value": 157
+                            },
+                            "end_location": {
+                                "lat": -5.8577682,
+                                "lng": -35.2343864
+                            },
+                            "html_instructions": "At the roundabout, take the <b>1st</b> exit onto <b>Av. dos Xavantes</b>",
+                            "maneuver": "roundabout-right",
+                            "polyline": {
+                                "points": "nhwb@|o`vEI@G?G?OEUDMB[RIPGJEJkAzB"
+                            },
+                            "start_location": {
+                                "lat": -5.8587985,
+                                "lng": -35.2334335
+                            },
+                            "travel_mode": "WALKING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.6 km",
+                                "value": 560
+                            },
+                            "duration": {
+                                "text": "8 mins",
+                                "value": 473
+                            },
+                            "end_location": {
+                                "lat": -5.8618872,
+                                "lng": -35.2372575
+                            },
+                            "html_instructions": "Turn <b>left</b> onto <b>R. Rio Gramame</b>",
+                            "maneuver": "turn-left",
+                            "polyline": {
+                                "points": "`bwb@|u`vEpB`AvDjBZNJB^NRHFDFBLHPJ^X~BhBtAdAh@b@|@p@BHLJDDJD"
+                            },
+                            "start_location": {
+                                "lat": -5.8577682,
+                                "lng": -35.2343864
+                            },
+                            "travel_mode": "WALKING"
+                        },
+                        {
+                            "distance": {
+                                "text": "56 m",
+                                "value": 56
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 60
+                            },
+                            "end_location": {
+                                "lat": -5.8616961,
+                                "lng": -35.2376892
+                            },
+                            "html_instructions": "At the roundabout, take the <b>1st</b> exit onto <b>R. Serra dos Carajás</b>",
+                            "maneuver": "roundabout-right",
+                            "polyline": {
+                                "points": "x{wb@zgavE@@?@@@CHCJAL_@j@"
+                            },
+                            "start_location": {
+                                "lat": -5.8618872,
+                                "lng": -35.2372575
+                            },
+                            "travel_mode": "WALKING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.2 km",
+                                "value": 222
+                            },
+                            "duration": {
+                                "text": "3 mins",
+                                "value": 172
+                            },
+                            "end_location": {
+                                "lat": -5.8631087,
+                                "lng": -35.2391092
+                            },
+                            "html_instructions": "Turn <b>left</b> onto <b>R. Serra das Cruzes</b>",
+                            "maneuver": "turn-left",
+                            "polyline": {
+                                "points": "rzwb@pjavE|A|A`@^fBhBp@r@"
+                            },
+                            "start_location": {
+                                "lat": -5.8616961,
+                                "lng": -35.2376892
+                            },
+                            "travel_mode": "WALKING"
+                        },
+                        {
+                            "distance": {
+                                "text": "48 m",
+                                "value": 48
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 40
+                            },
+                            "end_location": {
+                                "lat": -5.8628008,
+                                "lng": -35.2394113
+                            },
+                            "html_instructions": "Turn <b>right</b><div style=\"font-size:0.9em\">Destination will be on the left</div>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "lcxb@lsavEm@j@ON"
+                            },
+                            "start_location": {
+                                "lat": -5.8631087,
+                                "lng": -35.2391092
+                            },
+                            "travel_mode": "WALKING"
+                        }
+                    ],
+                    "traffic_speed_entry": [],
+                    "via_waypoint": []
+                },
+                {
+                    "distance": {
+                        "text": "0.3 km",
+                        "value": 284
+                    },
+                    "duration": {
+                        "text": "4 mins",
+                        "value": 244
+                    },
+                    "end_address": "R. Serra dos Carajás, 7994 - Pitimbú, Natal - RN, 59068-200, Brazil",
+                    "end_location": {
+                        "lat": -5.861533199999999,
+                        "lng": -35.2378806
+                    },
+                    "start_address": "Rua Serra das Araras, 8063 - Pitimbú, Natal - RN, 59068-050, Brazil",
+                    "start_location": {
+                        "lat": -5.8628008,
+                        "lng": -35.2394113
+                    },
+                    "steps": [
+                        {
+                            "distance": {
+                                "text": "24 m",
+                                "value": 24
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 19
+                            },
+                            "end_location": {
+                                "lat": -5.8626493,
+                                "lng": -35.2395609
+                            },
+                            "html_instructions": "Head <b>northwest</b>",
+                            "polyline": {
+                                "points": "naxb@huavE]\\"
+                            },
+                            "start_location": {
+                                "lat": -5.8628008,
+                                "lng": -35.2394113
+                            },
+                            "travel_mode": "WALKING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.2 km",
+                                "value": 216
+                            },
+                            "duration": {
+                                "text": "3 mins",
+                                "value": 190
+                            },
+                            "end_location": {
+                                "lat": -5.8612718,
+                                "lng": -35.2381832
+                            },
+                            "html_instructions": "Turn <b>right</b> onto <b>Rua Serra das Araras</b>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "p`xb@fvavEm@q@{AyAiCgC"
+                            },
+                            "start_location": {
+                                "lat": -5.8626493,
+                                "lng": -35.2395609
+                            },
+                            "travel_mode": "WALKING"
+                        },
+                        {
+                            "distance": {
+                                "text": "44 m",
+                                "value": 44
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 35
+                            },
+                            "end_location": {
+                                "lat": -5.861533199999999,
+                                "lng": -35.2378806
+                            },
+                            "html_instructions": "Turn <b>right</b> onto <b>R. Serra dos Carajás</b><div style=\"font-size:0.9em\">Destination will be on the right</div>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "|wwb@rmavEj@q@BCBE"
+                            },
+                            "start_location": {
+                                "lat": -5.8612718,
+                                "lng": -35.2381832
+                            },
+                            "travel_mode": "WALKING"
+                        }
+                    ],
+                    "traffic_speed_entry": [],
+                    "via_waypoint": []
+                },
+                {
+                    "distance": {
+                        "text": "0.3 km",
+                        "value": 254
+                    },
+                    "duration": {
+                        "text": "3 mins",
+                        "value": 195
+                    },
+                    "end_address": "R. Serra Acaraí, 8024 - Pitimbú, Natal - RN, 59068-040, Brazil",
+                    "end_location": {
+                        "lat": -5.863178899999999,
+                        "lng": -35.2386139
+                    },
+                    "start_address": "R. Serra dos Carajás, 7994 - Pitimbú, Natal - RN, 59068-200, Brazil",
+                    "start_location": {
+                        "lat": -5.861533199999999,
+                        "lng": -35.2378806
+                    },
+                    "steps": [
+                        {
+                            "distance": {
+                                "text": "28 m",
+                                "value": 28
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 21
+                            },
+                            "end_location": {
+                                "lat": -5.8616961,
+                                "lng": -35.2376892
+                            },
+                            "html_instructions": "Head <b>southeast</b> on <b>R. Serra dos Carajás</b>",
+                            "polyline": {
+                                "points": "pywb@vkavEVYHK"
+                            },
+                            "start_location": {
+                                "lat": -5.861533199999999,
+                                "lng": -35.2378806
+                            },
+                            "travel_mode": "WALKING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.2 km",
+                                "value": 182
+                            },
+                            "duration": {
+                                "text": "2 mins",
+                                "value": 142
+                            },
+                            "end_location": {
+                                "lat": -5.8628624,
+                                "lng": -35.23884839999999
+                            },
+                            "html_instructions": "Turn <b>right</b> onto <b>R. Serra das Cruzes</b>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "rzwb@pjavE|A|A`@^fBhB"
+                            },
+                            "start_location": {
+                                "lat": -5.8616961,
+                                "lng": -35.2376892
+                            },
+                            "travel_mode": "WALKING"
+                        },
+                        {
+                            "distance": {
+                                "text": "44 m",
+                                "value": 44
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 32
+                            },
+                            "end_location": {
+                                "lat": -5.863178899999999,
+                                "lng": -35.2386139
+                            },
+                            "html_instructions": "Turn <b>left</b><div style=\"font-size:0.9em\">Destination will be on the left</div>",
+                            "maneuver": "turn-left",
+                            "polyline": {
+                                "points": "zaxb@xqavEPO\\MNQ"
+                            },
+                            "start_location": {
+                                "lat": -5.8628624,
+                                "lng": -35.23884839999999
+                            },
+                            "travel_mode": "WALKING"
+                        }
+                    ],
+                    "traffic_speed_entry": [],
+                    "via_waypoint": []
+                },
+                {
+                    "distance": {
+                        "text": "0.1 km",
+                        "value": 144
+                    },
+                    "duration": {
+                        "text": "2 mins",
+                        "value": 126
+                    },
+                    "end_address": "Rua Serra das Araras, 8024 - Pitimbú, Natal - RN, 59068-050, Brazil",
+                    "end_location": {
+                        "lat": -5.8622352,
+                        "lng": -35.2391314
+                    },
+                    "start_address": "R. Serra Acaraí, 8024 - Pitimbú, Natal - RN, 59068-040, Brazil",
+                    "start_location": {
+                        "lat": -5.863178899999999,
+                        "lng": -35.2386139
+                    },
+                    "steps": [
+                        {
+                            "distance": {
+                                "text": "0.1 km",
+                                "value": 115
+                            },
+                            "duration": {
+                                "text": "2 mins",
+                                "value": 100
+                            },
+                            "end_location": {
+                                "lat": -5.8624192,
+                                "lng": -35.2393127
+                            },
+                            "html_instructions": "Head <b>northwest</b>",
+                            "polyline": {
+                                "points": "zcxb@hpavEOP]LQNwAzA"
+                            },
+                            "start_location": {
+                                "lat": -5.863178899999999,
+                                "lng": -35.2386139
+                            },
+                            "travel_mode": "WALKING"
+                        },
+                        {
+                            "distance": {
+                                "text": "29 m",
+                                "value": 29
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 26
+                            },
+                            "end_location": {
+                                "lat": -5.8622352,
+                                "lng": -35.2391314
+                            },
+                            "html_instructions": "Turn <b>right</b> onto <b>Rua Serra das Araras</b><div style=\"font-size:0.9em\">Destination will be on the left</div>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "b_xb@ttavEc@c@"
+                            },
+                            "start_location": {
+                                "lat": -5.8624192,
+                                "lng": -35.2393127
+                            },
+                            "travel_mode": "WALKING"
+                        }
+                    ],
+                    "traffic_speed_entry": [],
+                    "via_waypoint": []
+                },
+                {
+                    "distance": {
+                        "text": "0.2 km",
+                        "value": 173
+                    },
+                    "duration": {
+                        "text": "2 mins",
+                        "value": 142
+                    },
+                    "end_address": "R. Serra das Cruzes, 8009 - Pitimbú, Natal - RN, 59068-060, Brazil",
+                    "end_location": {
+                        "lat": -5.8623935,
+                        "lng": -35.2383802
+                    },
+                    "start_address": "Rua Serra das Araras, 8024 - Pitimbú, Natal - RN, 59068-050, Brazil",
+                    "start_location": {
+                        "lat": -5.8622352,
+                        "lng": -35.2391314
+                    },
+                    "steps": [
+                        {
+                            "distance": {
+                                "text": "29 m",
+                                "value": 29
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 21
+                            },
+                            "end_location": {
+                                "lat": -5.8624192,
+                                "lng": -35.2393127
+                            },
+                            "html_instructions": "Head <b>southwest</b> on <b>Rua Serra das Araras</b>",
+                            "polyline": {
+                                "points": "~}wb@psavEb@b@"
+                            },
+                            "start_location": {
+                                "lat": -5.8622352,
+                                "lng": -35.2391314
+                            },
+                            "travel_mode": "WALKING"
+                        },
+                        {
+                            "distance": {
+                                "text": "71 m",
+                                "value": 71
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 57
+                            },
+                            "end_location": {
+                                "lat": -5.8628624,
+                                "lng": -35.23884839999999
+                            },
+                            "html_instructions": "Turn <b>left</b>",
+                            "maneuver": "turn-left",
+                            "polyline": {
+                                "points": "b_xb@ttavEvA{A"
+                            },
+                            "start_location": {
+                                "lat": -5.8624192,
+                                "lng": -35.2393127
+                            },
+                            "travel_mode": "WALKING"
+                        },
+                        {
+                            "distance": {
+                                "text": "73 m",
+                                "value": 73
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 64
+                            },
+                            "end_location": {
+                                "lat": -5.8623935,
+                                "lng": -35.2383802
+                            },
+                            "html_instructions": "Turn <b>left</b> onto <b>R. Serra das Cruzes</b><div style=\"font-size:0.9em\">Destination will be on the right</div>",
+                            "maneuver": "turn-left",
+                            "polyline": {
+                                "points": "zaxb@xqavE}A}A"
+                            },
+                            "start_location": {
+                                "lat": -5.8628624,
+                                "lng": -35.23884839999999
+                            },
+                            "travel_mode": "WALKING"
+                        }
+                    ],
+                    "traffic_speed_entry": [],
+                    "via_waypoint": []
+                }
+            ],
+            "overview_polyline": {
+                "points": "|~wb@znavEk@k@}A}A^k@DY@KMISQaA{@_HmFo@_@{Am@iHmDpAgCP]h@WTENDN?HADBPDn@Jn@Z`DpBfC`B`BhAfBvAZVjDbDzB`CPTQU_AeAuAuAmDaDgBwAaBiAwFqDq@a@o@[aAQECI@O?OEUDi@VcBdDhHlDf@RbAb@^T~CbC~BhB`Az@`@X?@AJEX_@j@|A|AhChCp@r@m@j@m@l@iCkCiCgCj@q@FI`@e@~B|BfBhBPO\\MNQOP]LiBjBc@c@b@b@vA{A}A}A"
+            },
+            "summary": "R. Rio Gramame and Av. Pref. Omar O'Grady",
+            "warnings": [
+                "Walking directions are in beta. Use caution – This route may be missing sidewalks or pedestrian paths."
+            ],
+            "waypoint_order": [
+                0,
+                1,
+                2,
+                3,
+                4
+            ]
+        }
+    ],
+    "status": "OK"
+}
