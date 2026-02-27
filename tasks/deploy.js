@@ -24,6 +24,13 @@ let cfgs = {
         password: "E5ch_IS=!Uq(wQ(", // optional, prompted if none given
         host: "alderaan07.umbler.host",
         localRoot: path.join(__dirname, "../www"),
+        remoteRoot: "/public/baseorient_app",
+    },
+    geomem: {
+        user: "ialk-com-br", // NOTE that this was username in 1.x
+        password: "E5ch_IS=!Uq(wQ(", // optional, prompted if none given
+        host: "alderaan07.umbler.host",
+        localRoot: path.join(__dirname, "../www"),
         remoteRoot: "/public/geomem",
     },
 }
