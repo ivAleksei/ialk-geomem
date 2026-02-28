@@ -27,7 +27,7 @@ export class MapPage implements OnInit {
 
   user_marker: any;
   user_icon: any = L.icon({ iconUrl: '/assets/geomem/imgs/user_position.png', iconSize: [23, 23], iconAnchor: [11, 23] });
-  pin_icon: any = L.icon({ iconUrl: '/assets/geomem/imgs/pin_icon.png', iconSize: [32, 38], iconAnchor: [32, 38] });
+  pin_icon: any = L.icon({ iconUrl: '/assets/geomem/imgs/pin_icon.png', iconSize: [36, 42], iconAnchor: [18,42] });
 
   constructor(
     public nav: NavController,
@@ -39,11 +39,11 @@ export class MapPage implements OnInit {
     private alertsService: AlertsService,
     private loadingService: LoadingService,
   ) {
-    this.locationService.watch.subscribe(ev=>{
+    this.locationService.watch.subscribe(ev => {
       console.log(ev);
-      
+
     })
-   }
+  }
 
   ngOnInit() {
     this.setupPage();
@@ -65,6 +65,9 @@ export class MapPage implements OnInit {
     `);
     this.entries = data || [];
 
+    for (let it of Object.values(this.obj_markers || {})) 
+      (it as any).remove();
+    
 
     for (let it of this.entries) {
       this.obj_markers[it._id] = L.marker({ lat: it.lat, lng: it.lng }, {

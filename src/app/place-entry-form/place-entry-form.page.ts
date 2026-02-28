@@ -68,6 +68,8 @@ export class PlaceEntryFormPage implements OnInit {
     let data = await this.placeEntriesService.getPlaceEntryById(this._id, `
       name
       date
+      foodText
+      notes
     `);
     setTimeout(() => this.EntryForm.form.patchValue(data || {}), 200);
   }
@@ -84,6 +86,16 @@ export class PlaceEntryFormPage implements OnInit {
 
         this.EntryForm.form.reset();
         return this.nav.back();
+      })
+  }
+
+  delEntry() {
+    this.placeEntriesService.delPlaceEntry({ _id: this._id })
+      .then((done: any) => {
+        if (done?.status != 'success') return;
+
+        this.nav.back();
+        this.EntryForm.form.reset();
       })
   }
 }

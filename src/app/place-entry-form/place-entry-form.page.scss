@@ -37,8 +37,8 @@ form {
 }
 
 ion-button {
-    width: 80%;
-    margin: 16px auto;
+    width: calc(100% - 32px);
+    margin: 16px;
 }
 
 @media (prefers-color-scheme: dark) {

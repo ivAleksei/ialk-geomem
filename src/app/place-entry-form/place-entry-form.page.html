@@ -6,7 +6,11 @@
       </ion-button>
     </ion-buttons>
     <ion-title>{{i18n.lang.ADD_LOG}}</ion-title>
-
+  <ion-buttons slot="end">
+      <ion-button (click)="delEntry()" [disabled]="!_id">
+        <ion-icon name="trash"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true">
