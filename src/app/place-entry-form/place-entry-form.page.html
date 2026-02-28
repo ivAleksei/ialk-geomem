@@ -6,8 +6,8 @@
       </ion-button>
     </ion-buttons>
     <ion-title>{{i18n.lang.ADD_LOG}}</ion-title>
-  <ion-buttons slot="end">
-      <ion-button (click)="delEntry()" [disabled]="!_id">
+    <ion-buttons slot="end">
+      <ion-button (click)="delEntry()" [ngClass]="{disabled:!EntryForm.value._id}">
         <ion-icon name="trash"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -38,11 +38,13 @@
     <div class="section">
       <ion-item>
         <ion-label position="stacked">{{i18n.lang.FOOD_TEXT}}</ion-label>
-        <ion-textarea [placeholder]="i18n.lang.FOOD_TEXT_PLACEHOLDER" name="foodText" ngModel #foodText="ngModel" rows="5"></ion-textarea>
+        <ion-textarea [placeholder]="i18n.lang.FOOD_TEXT_PLACEHOLDER" name="foodText" ngModel #foodText="ngModel"
+          rows="5"></ion-textarea>
       </ion-item>
       <ion-item>
         <ion-label position="stacked">{{i18n.lang.NOTES}}</ion-label>
-        <ion-textarea [placeholder]="i18n.lang.NOTES_PLACEHOLDER" name="notes" ngModel #notes="ngModel" rows="5"></ion-textarea>
+        <ion-textarea [placeholder]="i18n.lang.NOTES_PLACEHOLDER" name="notes" ngModel #notes="ngModel"
+          rows="5"></ion-textarea>
       </ion-item>
     </div>
   </form>

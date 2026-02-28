@@ -27,7 +27,7 @@ export class MapPage implements OnInit {
 
   user_marker: any;
   user_icon: any = L.icon({ iconUrl: '/assets/geomem/imgs/user_position.png', iconSize: [23, 23], iconAnchor: [11, 23] });
-  pin_icon: any = L.icon({ iconUrl: '/assets/geomem/imgs/pin_icon.png', iconSize: [36, 42], iconAnchor: [18,42] });
+  pin_icon: any = L.icon({ iconUrl: '/assets/geomem/imgs/pin_icon.png', iconSize: [36, 42], iconAnchor: [18, 42] });
 
   constructor(
     public nav: NavController,
@@ -40,8 +40,7 @@ export class MapPage implements OnInit {
     private loadingService: LoadingService,
   ) {
     this.locationService.watch.subscribe(ev => {
-      console.log(ev);
-
+      this.setUserPosition();
     })
   }
 
@@ -65,9 +64,9 @@ export class MapPage implements OnInit {
     `);
     this.entries = data || [];
 
-    for (let it of Object.values(this.obj_markers || {})) 
+    for (let it of Object.values(this.obj_markers || {}))
       (it as any).remove();
-    
+
 
     for (let it of this.entries) {
       this.obj_markers[it._id] = L.marker({ lat: it.lat, lng: it.lng }, {
@@ -92,6 +91,17 @@ export class MapPage implements OnInit {
     }
 
     return;
+  }
+
+  async setUserPosition(position?) {
+    if (!position)
+      position = await this.locationService.getCurrentLocation();
+
+    this.centerMap = position;
+
+    this.user_marker.setLatLng(position);
+    this.leafletMap.setView(position);
+
   }
 
   async setupMap() {
@@ -126,5 +136,9 @@ export class MapPage implements OnInit {
 
   setPair(src, coords) {
     this.nav.navigateForward('/entry-form', { state: { coords } })
+  }
+
+  addEntry(){
+    this.setPair(null, this.user_marker.getLatLng())
   }
 }
