@@ -12,26 +12,20 @@ var argv = require("minimist")(process.argv.slice(2));
 let system = 'geomem';
 
 let config_base = {
-    port: 21,
+    sftp: true,
+    port: 22022,
     include: ["*", "**/*"], // this would upload everything except dot files
     exclude: ["assets/**/*", "svg/**/*"], //[],// e.g. exclude sourcemaps - ** exclude: [] if nothing to exclude **
     forcePasv: true // Passive mode is forced (EPSV command is not sent)
 };
 
 let cfgs = {
-    baseorient: {
-        user: "ialk-com-br", // NOTE that this was username in 1.x
-        password: "E5ch_IS=!Uq(wQ(", // optional, prompted if none given
-        host: "alderaan07.umbler.host",
-        localRoot: path.join(__dirname, "../www"),
-        remoteRoot: "/public/baseorient_app",
-    },
     geomem: {
-        user: "ialk-com-br", // NOTE that this was username in 1.x
-        password: "E5ch_IS=!Uq(wQ(", // optional, prompted if none given
-        host: "alderaan07.umbler.host",
+        user: "root", // NOTE that this was username in 1.x
+        password: "1@Lk.vps", // optional, prompted if none given
+        host: "129.121.53.56",
         localRoot: path.join(__dirname, "../www"),
-        remoteRoot: "/public/geomem",
+        remoteRoot: "/var/www/html/geomem",
     },
 }
 
@@ -63,23 +57,19 @@ ftpDeploy.on("log", function (data) {
 // ASSETS
 return Promise.resolve(true)
     .then(async start => {
-        if (argv.assets){
-            console.log(Object.assign({}, config, {
-                include: ["assets/**/*"],
-                exclude: [],
-                remoteRoot: "/var/www/html"
-            }));
-            
+        if (argv.assets) {
             await ftpDeploy.deploy(Object.assign({}, config, {
                 include: ["assets/**/*"],
                 exclude: [],
-                remoteRoot: "/var/www/html"
+                remoteRoot: "/var/www/html/assets/geomem"
             }))
         }
 
         // use with promises
-        console.log(config);
-        return ftpDeploy.deploy(config);
+        if (argv.app)
+            await ftpDeploy.deploy(config);
+
+        return;
     })
     .then(res => console.log("finished"))
     .catch(err => console.log(err));

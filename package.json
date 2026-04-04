@@ -11,6 +11,7 @@
     "start": "ng serve --host 0.0.0.0 --disable-host-check",
     "android": "ionic capacitor run android",
     "predeploy": "ng build --configuration production --base-href /geomem/",
+    "deploy:assets": "node tasks/deploy --env=prod --app=geomem --assets=1",
     "deploy": "node tasks/deploy --env=prod --app=geomem",
     "resources": "npx capacitor-assets generate",
     "watch": "ng build --watch --configuration development",
