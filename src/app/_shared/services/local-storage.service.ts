@@ -26,6 +26,8 @@ export class LocalStorageService {
     let data = this._storage.get(key);
     if (!data) return null;
 
+    console.log(data);
+    
     return JSON.parse(data);
   }
 

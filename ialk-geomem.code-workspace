@@ -1,6 +1,10 @@
 {
 	"folders": [
 		{
+			"name": "html — (Remote)",
+			"uri": "sftp://vps/"
+		},
+		{
 			"path": "."
 		},
 		{

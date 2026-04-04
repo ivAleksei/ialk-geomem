@@ -99,8 +99,8 @@ export class MapPage implements OnInit {
 
     this.centerMap = position;
 
-    this.user_marker.setLatLng(position);
-    this.leafletMap.setView(position);
+    this.user_marker?.setLatLng(position);
+    this.leafletMap?.setView(position);
 
   }
 

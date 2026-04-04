@@ -12,8 +12,11 @@ ion-header{
     // padding-left: 16px;
     margin: 0;
 }
+ion-content{
+    text-align: center;
+}
 
-form {
+ion-button,form {
     max-width: 400px;
     margin: 0 auto;
 }

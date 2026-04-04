@@ -71,7 +71,7 @@ export class AppComponent {
 
   async checkVersionUpdate() {
     if (!environment.production) return;
-    let data = await this.http.pureGet('/revision');
+    let data = await this.http.pureGet(environment.portal.url + 'revision');
     let last_rev = await this.storage.get('_rev');
     if (!last_rev || last_rev != data?.revision) {
       await this.storage.set('_rev', data?.revision);
