@@ -14,7 +14,7 @@ export const environment = {
   },
   Socket: {
     platform: "geomem",
-    url: "https://ialk-socket-4a3a27ccedad.herokuapp.com",
+    url: "https://socket.ialk.com.br",
   },
   oneSignal: {
     appId: "e84cc2ee-5c42-490f-a976-58f9349c42d2",
