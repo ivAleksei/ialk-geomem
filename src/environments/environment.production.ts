@@ -7,10 +7,10 @@ export const environment = {
     url: "https://ialk.com.br/geomem/"
   },
   API: {
-    storage: "https://storage.cbm.rn.gov.br",
-    auth: "https://us-central1-ialk-f967b.cloudfunctions.net/geomem_auth",
-    admin: "https://us-central1-ialk-f967b.cloudfunctions.net/geomem_admin",
-    geomem: "https://us-central1-ialk-f967b.cloudfunctions.net/geomem_api",
+    storage: "https://storage.ialk.com.br",
+    auth: "https://geomemapi.ialk.com.br/api_auth/graphql",
+    admin: "https://geomemapi.ialk.com.br/api_auth/graphql",
+    geomem: "https://geomemapi.ialk.com.br/api_geomem/graphql",
   },
   Socket: {
     platform: "geomem",
