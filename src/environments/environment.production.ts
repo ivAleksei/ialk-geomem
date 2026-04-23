@@ -4,7 +4,7 @@ export const environment = {
   browser: true,
   menu_type: 'side',
   portal: {
-    url: "https://ialk.com.br/geomem/"
+    url: "https://geomem.ialk.com.br/"
   },
   API: {
     storage: "https://storage.ialk.com.br",
